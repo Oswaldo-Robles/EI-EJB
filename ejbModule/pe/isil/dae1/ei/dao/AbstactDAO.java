@@ -6,7 +6,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
 
-public abstract class AbstactDAO<t, T> implements GenericDAO<T> {
+public abstract class AbstactDAO<T> implements GenericDAO<T> {
 	
 	@PersistenceContext(unitName = "UnidadPersistenciaEI") // mismo nombre declarado en la linea 7 de persistence.xml
 	protected EntityManager em;
