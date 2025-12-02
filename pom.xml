@@ -6,6 +6,31 @@ xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/
   <artifactId>EI_DAE1_EJB</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>ejb</packaging>
+
+	<dependencies>
+  		<dependency>
+			<groupId>jakarta.platform</groupId>
+			<artifactId>jakarta.jakartaee-api</artifactId>
+			<version>10.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>12.4.2.jre8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.10.2</version>
+			<scope>test</scope>
+		</dependency>
+		
+  </dependencies>
+ 
   <build>
     <sourceDirectory>ejbModule</sourceDirectory>
     <resources>
