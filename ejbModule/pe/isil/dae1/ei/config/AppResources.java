@@ -7,7 +7,7 @@ import jakarta.ejb.Startup;
 @Singleton
 @Startup
 @DataSourceDefinition(
-		name="java:app/jdbc/EI_DAE1DS",
+		name="java:app/jdbc/EI_DAE1DS", // mismo nombre declarado en la linea 10 de persistence.xml
 		className="com.microsoft.sqlserver.jdbc.SQLServerDriver",
 		url="jdbc:sqlserver://localhost:1433;databaseName=DAE1_EI;encrypt=true;trustServerCertificate=true",
 		user="",

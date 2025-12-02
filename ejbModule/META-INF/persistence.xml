@@ -7,7 +7,7 @@
 	<persistence-unit name="UnidadPersistenciaEI"
 		transaction-type="JTA">
 
-		<jta-data-source>DAE1DSEI</jta-data-source>
+		<jta-data-source>EI_DAE1DS</jta-data-source>
 
 		<properties>
 			<property
