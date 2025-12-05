@@ -28,8 +28,13 @@ xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/
 			<version>5.10.2</version>
 			<scope>test</scope>
 		</dependency>
-		
-  </dependencies>
+
+		<dependency>
+			<groupId>ProyectoEJBDAE1</groupId>
+			<artifactId>ProyectoEJBDAE1</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
  
   <build>
     <sourceDirectory>ejbModule</sourceDirectory>
@@ -56,6 +61,15 @@ xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/
           <ejbVersion>3.1</ejbVersion>
         </configuration>
       </plugin>
+      <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+		<version>3.2.5</version>
+		<configuration>
+			<useModulePath>false</useModulePath>
+		</configuration>
+	</plugin>
+
     </plugins>
   </build>
 </project>
